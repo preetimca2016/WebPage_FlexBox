@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            padding: 2em;   
+            background-color: aqua;         
+        }
+        .header-container, .footer-container{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: rgb(247, 95, 95);
+            font-weight: bold;
+            padding: 10px;
+        }        
+        .main-container{
+            display: flex;
+           flex-flow: row wrap;
+            height: 400px;
+            text-align: center;
+            font-size: 30px;
+        } 
+        nav{
+            flex: 20;
+            background: yellow;
+        }
+        article{
+            flex: 60;            
+            background: rgb(33, 108, 158);
+        }
+        aside{
+            flex: 20;
+            background: rgb(137, 209, 42);
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <h1>Website WebPage Layout</h1>
+    </header>
+    <main class="main-container">  
+        
+        <nav class="sideBarItem">Nav</nav>
+        <article>Article</article>
+        <aside class="sideBarItem">Aside</aside>
+          
+        
+    </main>
+    
+    <footer class="footer-container">
+        <h3>@bridgelabs.com</h3>
+    </footer>
+</body>
+</html>
